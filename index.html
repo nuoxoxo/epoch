@@ -120,7 +120,7 @@
 				)
 				const Days = (Curr /*as any*/) - (Qstr /*as any*/)
 				CLOCK.textContent = `${
-					( Days / 86400000 ).toFixed(9)
+					( Days * -1 / 86400000 ).toFixed(8)
 					// 86400000 milliseconds/day
 					//		= 24 hours * 60 minutes * 60 seconds * 1000 milliseconds
 					// 31557600000 milliseconds/year
